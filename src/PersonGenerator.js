@@ -40,10 +40,20 @@ export default class PersonGenerator {
   }
 
   _generateOptions(options?: Options) : Object {
-    let min = 1;
-    let max = 1000000;
-    let seed = Rand.integer(min, max)(Rand.engines.mt19937().autoSeed());
-    let genetic = options ? new Genetic(options) : new Genetic({seed});
+    let opts = {};
+    let seed = Rand.integer(1, 1000000)(Rand.engines.mt19937().autoSeed());
+    
+    if(!options){
+      opts.seed = seed;
+    }
+    else{
+      opts = options;
+      if(!opts.seed){
+        opts.seed = seed;
+      }
+    }
+    
+    let genetic = new Genetic(opts);
 
     let age = genetic.age();
     let gender = genetic.gender();

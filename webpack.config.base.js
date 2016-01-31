@@ -34,7 +34,7 @@ module.exports = {
       {
         test: /\.(svg)$/,
         include: path.join(__dirname, 'src/assets/img'),
-        loader: 'svg-url-loader'
+        loader: 'url'
       }
     ]
   },

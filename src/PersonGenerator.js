@@ -52,7 +52,7 @@ export default class PersonGenerator {
         opts.seed = seed;
       }
     }
-    
+
     let genetic = new Genetic(opts);
 
     let age = genetic.age();

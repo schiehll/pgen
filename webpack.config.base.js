@@ -2,6 +2,7 @@ var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var autoprefixer = require('autoprefixer');
+var webpackUMDExternal = require('webpack-umd-external');
 
 module.exports = {
   devtool: 'source-map',
@@ -15,7 +16,10 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'pgen.js',
-    publicPath: '/dist/'
+    publicPath: '/dist/',
+    devtoolModuleFilenameTemplate: '../[resource-path]',
+    libraryTarget: 'umd',
+    library: 'pgen'
   },
   
   plugins: [
@@ -51,6 +55,11 @@ module.exports = {
   postcss: () => {
     return [autoprefixer];
   },
+
+  externals: webpackUMDExternal({
+    'react': 'react',
+    'react-dom': 'react-dom'
+  }),
 
   resolve: {
     fallback: path.join(__dirname, 'node_modules'),

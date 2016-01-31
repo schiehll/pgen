@@ -57,7 +57,8 @@
     "url-loader": "^0.5.6",
     "webpack": "^1.12.9",
     "webpack-dev-middleware": "^1.4.0",
-    "webpack-hot-middleware": "^2.6.0"
+    "webpack-hot-middleware": "^2.6.0",
+    "webpack-umd-external": "^1.0.2"
   },
   "dependencies": {
     "freezer-js": "^0.9.6",

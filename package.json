@@ -15,8 +15,8 @@
     "build:test": "npm run clean:test && cross-env NODE_ENV=test webpack --config webpack.config.test.js",
     "build": "npm run build:dev",
     "start": "node devServer.js",
-    "test": "npm run build:test && mocha ./dist/test/test.js",
-    "test:all": "cross-env TESTING=all npm run build:test && mocha ./dist/test/test.js"
+    "test:go": "npm run build:test && mocha ./dist/test/test.js",
+    "test": "cross-env TESTING=all npm run build:test && mocha ./dist/test/test.js"
   },
   "devDependencies": {
     "babel-core": "^6.3.15",

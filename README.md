@@ -1,3 +1,3 @@
 # pgen
 
-Experimental Person Generator with avatar
+Experimental Person Generator with svg avatar

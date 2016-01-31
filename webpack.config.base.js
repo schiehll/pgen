@@ -14,7 +14,7 @@ module.exports = {
   
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: 'pgen.js',
     publicPath: '/dist/'
   },
   

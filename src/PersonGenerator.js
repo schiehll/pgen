@@ -1,4 +1,5 @@
 import React from 'react';
+import Rand from 'random-js';
 import Person from './Person';
 import Genetic from './Genetic';
 import Avatar from './Avatar';
@@ -41,7 +42,8 @@ export default class PersonGenerator {
   _generateOptions(options?: Options) : Object {
     let min = 1;
     let max = 1000000;
-    let genetic = options ? new Genetic(options) : new Genetic({seed: Math.floor(Math.random() * (max - min)) + min});
+    let seed = Rand.integer(min, max)(Rand.engines.mt19937().autoSeed());
+    let genetic = options ? new Genetic(options) : new Genetic({seed});
 
     let age = genetic.age();
     let gender = genetic.gender();

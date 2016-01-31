@@ -1,5 +1,5 @@
 {
-  "name": "app",
+  "name": "pgen",
   "version": "1.0.0",
   "main": "./dist/pgen.js",
   "repository": {

@@ -1,0 +1,18 @@
+{
+  "presets": ["react", "es2015"],
+  "env": {
+    "development": {
+      "presets": ["react-hmre"]
+    }
+  },
+  "plugins": [
+    "jsx-control-statements",
+    [
+      "typecheck", {
+        "disable": {
+          "production": true
+        }  
+      }
+    ]
+  ]
+}

@@ -71,8 +71,8 @@ export default class PersonGenerator {
     let registry = new Registry();
 
     return new Person({
-      firstName: opts.firstName || registry.name(opts.country.initials).first,
-      lastName: opts.lastName || registry.name(opts.country.initials).last,
+      firstName: opts.firstName || registry.name(opts.country.names).first,
+      lastName: opts.lastName || registry.name(opts.country.names).last,
       age: opts.age,
       country: opts.country.initials,
       gender: opts.gender,

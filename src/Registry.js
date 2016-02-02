@@ -1,11 +1,12 @@
 import Genetic from './Genetic';
 import * as brazilian from './names/brazilian';
 import * as latino from './names/latino';
+import * as russian from './names/russian';
 
 export default class Registry {
   constructor(genetic: Genetic){
     this.genetic = genetic;
-    this.allNames = {brazilian, latino};
+    this.allNames = {brazilian, latino, russian};
   }
 
   firstName(country: string, gender: string) : string {

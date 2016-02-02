@@ -34,6 +34,31 @@ export default class Countries {
         names: this.names.LATINO
       },
       {
+        initials: 'URY',
+        ethnicity: this.ethnicity.MEDIUM,
+        names: this.names.LATINO
+      },
+      {
+        initials: 'CHL',
+        ethnicity: this.ethnicity.MEDIUM,
+        names: this.names.LATINO
+      },
+      {
+        initials: 'VEN',
+        ethnicity: this.ethnicity.MEDIUM,
+        names: this.names.LATINO
+      },
+      {
+        initials: 'ECU',
+        ethnicity: this.ethnicity.MEDIUM,
+        names: this.names.LATINO
+      },
+      {
+        initials: 'PER',
+        ethnicity: this.ethnicity.MEDIUM,
+        names: this.names.LATINO
+      },
+      {
         initials: 'CHN',
         ethnicity: this.ethnicity.LIGHT,
         names: this.names.LATINO
@@ -51,7 +76,7 @@ export default class Countries {
       {
         initials: 'RUS',
         ethnicity: this.ethnicity.LIGHT,
-        names: this.names.LATINO
+        names: this.names.RUS
       }
     ];
 

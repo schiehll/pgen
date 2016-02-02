@@ -1,11 +1,11 @@
 export const maleFirstNames = [
-  'Aaron', 'Adriano', 'Alan', 'Alexandre', 'Alonso', 'Anderson', 'Andres', 'Antônio', 'Benjamin', 'Bruno', 'Camilo', 'Carlos', 'Christian',
-  'Christopher', 'Cristóvão', 'Daniel', 'Dante', 'David', 'Diego', 'Diogo', 'Eduardo', 'Elias', 'Emanuel', 'Emiliano', 'Emílio', 'Estevão',
-  'Evandro', 'Everton', 'Felipe', 'Fernando', 'Francisco', 'Franco', 'Fábio', 'Gabriel', 'Gian', 'Guilherme', 'Gustavo', 'Henrique',
-  'Hernani', 'Horácio', 'Hugo', 'Ian', 'Inácio', 'Isaac', 'Ivan', 'Jerônimo', 'Joaquin', 'Jorge', 'Josué', 'José', 'João', 'Kevin', 'Leandro', 
-  'Leonardo', 'Lucas', 'Luciano', 'Luis', 'Luiz', 'Manuel', 'Mateus', 'Matias', 'Miguel', 'Mário', 'Moisés', 'Noel', 'Pablo', 'Paulo', 'Pedro', 
-  'Rafael', 'Reginaldo', 'Ricardo', 'Roberto', 'Rodrigo', 'Ronaldo', 'Samuel', 'Santiago', 'Simon', 'Sérgio', 'Thales', 'Thiago', 'Tomás', 'Valentin', 
-  'Vicente', 'Agostinho', 'Demian', 'Giovane', 'Jácomo', 'Martinho', 'Max', 'Sebastião'
+  'Adriano', 'Alan', 'Alessandro', 'Alexandre', 'Alonso', 'Anderson', 'Andres', 'André', 'Andrey', 'Antônio', 'Augusto', 'Arthur', 'Benjamin', 'Bruno', 'Breno', 'Camilo', 
+  'Carlos', 'Christian', 'Christopher', 'Cristóvão', 'Cézar', 'Caio', 'Daniel', 'Dante', 'David', 'Diego', 'Diogo', 'Douglas', 'Eduardo', 'Elias', 'Emanuel', 'Emiliano', 'Emílio', 
+  'Estevão', 'Evandro', 'Everton', 'Felipe', 'Fernando', 'Francisco', 'Franco', 'Fábio', 'Flávio', 'Gabriel', 'Gian', 'Gilmar', 'Guilherme', 'Gustavo', 'Henrique',
+  'Hernani', 'Horácio', 'Hugo', 'Ian', 'Inácio', 'Isaac', 'Ivan', 'Iago', 'Jerônimo', 'Jonathan', 'Joaquin', 'Jean', 'Jorge', 'Josué', 'José', 'João', 'Jonas', 'Kevin', 'Leandro', 
+  'Leonardo', 'Lucas', 'Luciano', 'Luis', 'Luiz', 'Manuel', 'Marcelo', 'Maicon', 'Mateus', 'Matias', 'Miguel', 'Mário', 'Moisés', 'Murilo', 'Noel', 'Osvaldo', 'Oscar', 
+  'Pablo', 'Paulo', 'Pedro', 'Rafael', 'Ramon', 'Reginaldo', 'Ricardo', 'Roberto', 'Roger', 'Rogério', 'Rodrigo', 'Ronaldo', 'Renan', 'Samuel', 'Santiago', 'Simon', 'Sérgio', 
+  'Thales', 'Thiago', 'Tomás', 'Valentin', 'Vagner', 'Vicente', 'Vitor', 'Agostinho', 'Demian', 'Giovane', 'Max', 'Sebastião', 'Wallace', 'Wellinton', 'Wesley', 'Willian'
 ];
 
 export const femaleFirstNames = [
@@ -22,8 +22,8 @@ export const femaleFirstNames = [
 export const lastNames = [
   'Abreu', 'Azevedo', 'Aguiar', 'Aragão', 'Assunção', 'Aranda', 'Ávila',
   'Andrade', 'Balestero', 'Barreto', 'Barros', 'Batista', 'Bezerra', 'Beltrão',
-  'Benites', 'Bittencourt', 'Branco', 'Bonilha', 'Brito', 'Burgos',
-  'Caldeira', 'Camacho', 'Campos', 'Carmona', 'Carrara', 'Casanova',
+  'Benites', 'Bittencourt', 'Branco', 'Bonilha', 'Brito', 'Burgos', 'Brandão', 
+  'Bernardes', 'Caldeira', 'Camacho', 'Campos', 'Carmona', 'Carrara', 'Casanova',
   'Chaves', 'Cervantes', 'Colaço', 'Cordeiro', 'Corona', 'Correia',
   'Cortês', 'Cruz', 'Delatorre', 'Delgado', 'Delvalle', 'Donatto',
   'Dias', 'Domingues', 'Dominato', 'Duarte', 'Escobar', 'Espinoza',
@@ -42,9 +42,9 @@ export const lastNames = [
   'Rivera', 'Rocha', 'Rodrigues', 'Romero', 'Roque', 'Rosa', 'Salas',
   'Salazar', 'Sales', 'Salgado', 'Sanches', 'Sandoval', 'Santacruz',
   'Santana', 'Santiago', 'Saraiva', 'Sepúlveda', 'Serna', 'Serra',
-  'Serrano', 'Soares', 'Solano', 'Soto', 'Tamoio', 'Teles', 'Toledo',
-  'Torres', 'Uchoa', 'Urias', 'Valdez', 'Valência', 'Valentin', 'Vale',
-  'Vasques', 'Vega', 'Velasques', 'Verdugo', 'Verdara', 'Vieira', 'Vila',
+  'Serrano', 'Soares', 'Solano', 'Soto', 'Solto', 'Santos', 'Silva', 
+  'Tamoio', 'Teles', 'Toledo', 'Torres', 'Uchoa', 'Urias', 'Valdez', 'Valência', 
+  'Valentin', 'Vale', 'Vasques', 'Vega', 'Velasques', 'Verdugo', 'Verdara', 'Vieira', 'Vila',
   'Zamana', 'Zambrano', 'Zaragoça', 'da Cruz', 'da Rosa', 'da Silva',
   'das Dores', 'das Neves', 'de Aguiar', 'de Oliveira', 'de Souza', 'de Paula'
 ];

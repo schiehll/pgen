@@ -1,21 +1,26 @@
-import Rand from 'random-js';
+import Genetic from './Genetic';
+import * as brazilian from './names/brazilian';
+import * as latino from './names/latino';
 
 export default class Registry {
-  constructor(){
-    this.engine = Rand.engines.mt19937().autoSeed();
-    this.random = new Rand(this.engine);
+  constructor(genetic: Genetic){
+    this.genetic = genetic;
+    this.allNames = {brazilian, latino};
   }
 
-  name(country: string) : Object {
-    let completeName = {};
-    require.ensure(['./names/brazilian', './names/latino'], (require) => {
-      let names = require('./names/' + country);
-      console.log(names);
-      
-      completeName.first = names.maleFirstNames[this.random.integer(0, names.maleFirstNames.length - 1)];
-      completeName.last = names.maleLastNames[this.random.integer(0, names.maleLastNames.length - 1)];
-    });
+  firstName(country: string, gender: string) : string {
+    let names = this.allNames[country];
     
-    return completeName;
+    if(gender === this.genetic.genders.MALE){
+      return names.maleFirstNames[this.genetic.random.integer(0, names.maleFirstNames.length - 1)];
+    }
+
+    return names.femaleFirstNames[this.genetic.random.integer(0, names.femaleFirstNames.length - 1)];
+  }
+
+  lastName(country: string) : string {
+    let names = this.allNames[country];
+
+    return names.lastNames[this.genetic.random.integer(0, names.lastNames.length - 1)];
   }
 }

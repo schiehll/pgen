@@ -36,22 +36,22 @@ export default class Countries {
       {
         initials: 'CHN',
         ethnicity: this.ethnicity.LIGHT,
-        names: this.names.CHN
+        names: this.names.LATINO
       },
       {
         initials: 'JPN',
         ethnicity: this.ethnicity.LIGHT,
-        names: this.names.JPN
+        names: this.names.LATINO
       },
       {
         initials: 'USA',
         ethnicity: this.ethnicity.ALL,
-        names: this.names.USA
+        names: this.names.LATINO
       },
       {
         initials: 'RUS',
         ethnicity: this.ethnicity.LIGHT,
-        names: this.names.RUS
+        names: this.names.LATINO
       }
     ];
 

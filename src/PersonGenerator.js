@@ -68,11 +68,11 @@ export default class PersonGenerator {
 
   make(options?: Options) : Person {
     let opts = options ? this._generateOptions(options) : this._generateOptions();
-    let registry = new Registry();
+    let registry = new Registry(opts.genetic);
 
     return new Person({
-      firstName: opts.firstName || registry.name(opts.country.names).first,
-      lastName: opts.lastName || registry.name(opts.country.names).last,
+      firstName: opts.firstName || registry.firstName(opts.country.names, opts.gender),
+      lastName: opts.lastName || registry.lastName(opts.country.names),
       age: opts.age,
       country: opts.country.initials,
       gender: opts.gender,

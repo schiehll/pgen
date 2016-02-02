@@ -2,11 +2,14 @@ import React from 'react';
 import Rand from 'random-js';
 import Person from './Person';
 import Genetic from './Genetic';
+import Registry from './Registry';
 import Avatar from './Avatar';
 import avatarSvg from './assets/img/avatar.svg';
 
 type Options = {
   seed?: number,
+  firstName?: string,
+  lastName?: string,
   minAge?: number,
   maxAge?: number,
   age?: number,
@@ -65,10 +68,11 @@ export default class PersonGenerator {
 
   make(options?: Options) : Person {
     let opts = options ? this._generateOptions(options) : this._generateOptions();
+    let registry = new Registry();
 
     return new Person({
-      firstName: 'First',
-      lastName: 'Last',
+      firstName: opts.firstName || registry.name(opts.country.initials).first,
+      lastName: opts.lastName || registry.name(opts.country.initials).last,
       age: opts.age,
       country: opts.country.initials,
       gender: opts.gender,

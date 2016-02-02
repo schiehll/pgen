@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var glob = require("glob");
 
 module.exports = {
-  target: 'web',
+  target: 'node',
   devtool: 'eval',
 
   entry: {
